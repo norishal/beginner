@@ -1,0 +1,37 @@
+#question1
+print("Hello World")
+print("I have no skill")
+print("but I'll work in Google someday")
+
+#question2
+x=18
+if (x<10):
+  print("It's less")
+else:
+  print("No")
+
+#question3
+x=30
+if (x<=10):
+  print("It's less")
+elif(x>10 and x<=25):
+  print("hoo")
+else:
+  print("No")
+
+#question4
+print(10%3)
+
+#question5
+x=30
+y=4
+print(x//y)
+
+#question6
+age=45
+if age==35:
+  print("oof")
+if age==45:
+  print("you're old af")
+  if age%2==1:
+    print("duuuuudeee")
