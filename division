@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num1, num2, divide, reminder;
+    cout<<"Enter the first number : ";
+    cin>>num1;
+    cout<<"Enter the second number : ";
+    cin>>num2;
+    
+    divide=num1/num2;
+    cout<<"The division of both numbers is "<<divide<<"\n";
+    reminder=num1%num2;
+    cout<<"The reminder of both numbers is "<<reminder;
+    return 0;
+}
