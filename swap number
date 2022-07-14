@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,temp;
+    cout<<"Enter number A : ";
+    cin>>a;
+    cout<<"Enter number B: ";
+    cin>>b;
+    cout<<"Swapping...................\n";
+    cout<<"..........\n";
+    temp=a;
+    a=b;
+    b=temp;
+    cout<<"A is now "<<a<<"\n";
+    cout<<"B is now "<<b;
+    return 0;
+}
