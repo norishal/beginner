@@ -1,0 +1,34 @@
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    float a, b, c, root1, root2, det, simp;
+    cout<<"Enter coefficient a,b,c : ";
+    cin>>a>>b>>c;
+    
+    det=(b*b)-(4*a*c);
+    cout<<det<<"\n";
+    
+    if (det>0){
+        root1=(-b+sqrt(det))/(2*a);
+        root2=(-b-sqrt(det))/(2*a);
+        cout<<"Roots are real and different \n"<<"Root 1: "<<root1<<"\nRoot 2: "<<root2;
+    }
+    else if (det==0){
+        //simp=simplified formula
+        simp=(-b)/(2*a);
+        root1=simp;
+        root2=root1;
+        cout<<"Roots are the same \n"<<"Root 1: "<<root1<<"\nRoot 2: "<<root2;
+    }
+    else {
+        simp=(-b)/(2*a);
+        root1=(sqrt(-det))/(2*a);
+        cout<<"Roots are complex and different \n"<<"Root 1: "<<simp<<" + "<<root1<<"i\nRoot 2: "<<simp<<" - "<<root1;
+    }
+    
+
+    return 0;
