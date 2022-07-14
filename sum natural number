@@ -5,12 +5,33 @@ using namespace std;
 int main()
 {
     int n,sum=0;
-    cout<<"Enter number : ";  
+    cout<<"Enter positive number : ";  
     cin>>n;
     for(int i=1;i<=n;i++){
         sum+=i;
     }
     cout<<"The sum is "<<sum;
+    return 0;
+    
+}
+
+or using recursion
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter positive number : ";  
+    cin>>n;
+    cout<<"Total is "<<add(n);
+    return 0;
+    }
+    int add(int n){
+    if (n!=0)
+        return n+add(n-1);
     return 0;
     
 }
