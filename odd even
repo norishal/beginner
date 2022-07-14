@@ -18,3 +18,21 @@ int main()
     cout<<"Number not valid, positive number only";
     return 0;
 }
+
+or using ternary operators
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+
+  cout << "Enter an integer: ";
+  cin >> n;
+    
+  (n % 2 == 0) ? cout << n << " is even." :  cout << n << " is odd.";
+    
+    return 0;
+}
