@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char a;
+    bool uppercaset, lowercaset;
+    
+    cout<<"Enter an alphabet : ";
+    cin>>a;
+    uppercaset=(a=='A'||a=='E'||a=='I'||a=='O'||a=='U');
+    lowercaset=(a=='a'||a=='e'||a=='i'||a=='o'||a=='u');
+    
+    if (!isalpha(a))
+    cout<<a<<" is not an alphabet";
+    else if (uppercaset||lowercaset)
+    cout<<"It's a vowel";
+    else
+    cout<<"It's a consonant";
+    
+    return 0;
+}
